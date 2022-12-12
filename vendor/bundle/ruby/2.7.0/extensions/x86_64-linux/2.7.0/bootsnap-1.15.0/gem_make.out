@@ -1,0 +1,15 @@
+current directory: /home/ash/Development/code/phase4/med_innov8/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20221212-131158-13ko5r5.rb extconf.rb
+creating Makefile
+
+current directory: /home/ash/Development/code/phase4/med_innov8/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/ash/Development/code/phase4/med_innov8/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/ash/Development/code/phase4/med_innov8/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20221212-131158-1spc4m8/bootsnap
