@@ -1,5 +1,5 @@
 class AppointmentsController < ApplicationController
-    
+
     def index
         appointments = Appointment.all
         render json: appointments, status: :ok
@@ -20,7 +20,7 @@ class AppointmentsController < ApplicationController
     def destroy
         appointment = Appointment.find(params[:id])
         appointment.destroy
-        render json: {message:['Successfully deleted!']}
+        render json: {}, status: :no_content
     end
 
     private

@@ -25,7 +25,7 @@ class DoctorsController < ApplicationController
     def destroy
         doctor = Doctor.find(params[:id])
         doctor.destroy
-        render json: {message:['Successfully deleted!']}
+        render json: {}, status: :no_content
     end
 
     private

@@ -3,8 +3,8 @@ class PatientsSessionsController < ApplicationController
     skip_before_action :authorize, only: :create
 
     def create
-        hospital = Patient.find_by(email: params[:username])
-        if user&.authenticate(params[:password])
+        patient = Patient.find_by(email: params[:email])
+        if patient&.authenticate(params[:password])
             session[:patient_id] = patient.id
             render json: patient
         else
@@ -16,7 +16,7 @@ class PatientsSessionsController < ApplicationController
 
     def destroy
         session.delete :patient_id
-        render json {message:['Successfully logged out!']}
+        render json: {}, status: :no_content
     end
 
 
