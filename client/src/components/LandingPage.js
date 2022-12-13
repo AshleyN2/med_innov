@@ -6,8 +6,8 @@ function LandingPage() {
 return (
     <div>
         <h1>Landing Page</h1>
-        <button onclick={()=>{navigate('/patient_login')}}>Patient Login</button>
-        <button  onclick={()=>{navigate('/hospital_login')}}>Hospital Login</button>
+        <button onclick={ () => {navigate('/patient_login')}}>Patient Login</button>
+        <button  onclick={ () => {navigate('/hospital_login')}}>Hospital Login</button>
     </div>
   )
 }
