@@ -3,7 +3,7 @@ import { useNavigate} from 'react-router-dom'
 import '../css/PatientHomePage.css'
 
 
-const PatientHomePage = ({setPatient, patient, hospital}) => {
+const PatientHomePage = ({setPatient, patient, hospitals}) => {
 
     const navigate = useNavigate()
 
@@ -44,7 +44,7 @@ const PatientHomePage = ({setPatient, patient, hospital}) => {
         </div>
         <div className="row">
             {
-                hospital &&  hospital.map(
+                hospitals &&  hospitals.map(
                     (hospital) => {
                         return(
                             hospital && hospital.location === patient.location &&
@@ -72,7 +72,7 @@ const PatientHomePage = ({setPatient, patient, hospital}) => {
         </div>
         <div className="row ">
             {
-                hosphospitals.map(
+                hospitals.map(
                     (hospital) => {
                         return(
                             hospital && hospital.location !== patient.location &&

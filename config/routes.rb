@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   post '/patientsignup', to: 'patients#create'
   get '/patient', to: 'patients#show'
 
-  post '/my_appointments' to: 'appointments#create'
+  post '/my_appointments', to: 'appointments#create'
 
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
