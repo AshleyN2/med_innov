@@ -61,7 +61,8 @@ const PatientSignUp = ({setPatient}) => {
   }
 
   return (
-    <div className='container'>
+    <div style={{backgroundColor : "lightblue" }}
+    className='container'>
       {/* Bootstrap */}
       <div className="row">
         <div className="col-12">
@@ -71,38 +72,32 @@ const PatientSignUp = ({setPatient}) => {
       <div className="row ">
         <div className="col-12">
           <form onSubmit={handleSubmit}>
-            <div className="form-group mb-3">
-              <label htmlFor="name">Name</label>
-              <input type="text" className="f-control "  id="name" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} />
+            <div className="form-group mb-1 col-md-5">
+              <input type="text" className="form-control" id="name" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
             </div>
-            <div className="form-group mt-3">
-              <label htmlFor="email">Email address</label>
-              <input type="email" className="f-control" id="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <div className="form-group mt-3 col-md-5">
+              <input type="email" className="form-control" id="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div className="form-group mt-3">
-              <label htmlFor="password">Password</label>
-              <input type="password" className="f-control" id="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <div className="form-group mt-3 col-md-5">
+              <input type="text" className="form-control" id="location" placeholder="Enter location" value={location} onChange={(e) => setLocation(e.target.value)} />
             </div>
-            <div className="form-group mb-3">
-              <label htmlFor="password_confirmation">Password Confirmation</label>
-              <input type="password" className="f-control" id="password_confirmation" placeholder="Password Confirmation" value={password_confirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
-            </div>
-            <div className="form-group mt-3">
-              <label htmlFor="location">Location</label>
-              <input type="text" className="f-control" id="location" placeholder="Enter location" value={location} onChange={(e) => setLocation(e.target.value)} />
-            </div>
-            <div className="form-group mb-3">
+            <div className="form-group ms-2 col-md-5 mb-3 ">
               <label htmlFor="gender">Gender</label>
-              <select name="gender" id="gender"
+              <select className="option ms-3 mt-3" name="gender" id="gender"
               onChange={handleGenderChange}
               >
                 <option value="female">Female</option>
                 <option value="male">Male</option>
               </select>
             </div>
-            <div className="form-group mb-3">
-              <label htmlFor="age">Age</label>
-              <input type="number" className="f-control" id="age" placeholder="Enter age" value={age} onChange={(e) => setAge(e.target.value)} />
+            <div className="form-group mt-3 col-md-2">
+              <input type="number" className="form-control" id="age" placeholder="Enter age" value={age} onChange={(e) => setAge(e.target.value)} />
+            </div>
+            <div className="form-group mt-3 col-md-5">
+              <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <div className="form-group mt-3 col-md-5">
+              <input type="password" className="form-control" id="password_confirmation" placeholder="Enter Password Confirmation" value={password_confirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
             </div>
             {
               errors.map(error => {
@@ -110,7 +105,7 @@ const PatientSignUp = ({setPatient}) => {
               }
               )
             }
-            <button type="submit" className="btn ms-4  btn-primary ">Submit</button>
+            <button type="submit" className="btn ms-4 mt-5 btn-primary ">Submit</button>
             <p>
               Already have an account? <a href="/patient_login">Log In</a>
             </p>

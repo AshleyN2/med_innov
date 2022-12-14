@@ -44,25 +44,28 @@ const AppointmentForm = ({patient,hospitals}) => {
 console.log(errors)
 
   return (
-    <div className='container'>
+    <div style={{backgroundColor : "lightblue" }}
+    className='container'>
         <div className="row">
             <div className="col-md-6 offset-md-3">
                 <h1>Appointment Form</h1>
             </div>
         </div>
-        <div className="row">
+        <div style={{backgroundColor : "lightyellow" }}
+        className="row">
             <div className="col-md-6 offset-md-3">
                 <form onSubmit={handsubmit}>
-                    <div className="form-group">
+                    <div className="form-control mb-3 col-md-5">
                         <input type='date' placeholder='date' value={date} onChange={(e) => setDate(e.target.value)} />
                     </div>
-                    <div className="form-group">
-                        <input type='text' placeholder='diagnosis' value={diagnosis} onChange={(e) => setDiagnosis(e.target.value)} />
+                    <div className="form-control mb-3 col-md-5">
+                        <input type='text' placeholder='Ailment' value={diagnosis} onChange={(e) => setDiagnosis(e.target.value)} />
                     </div>
 
-                    <div className="form-group">
-                        <input type='submit' value='Submit' />
+                    <div >
+                        <button type="submit" className="btn ms-4 mt-2 btn-primary" onClick={() => navigate('/my_appointments')}>Submit</button>
                     </div>
+                    
                 </form>
                 </div>
                 </div>

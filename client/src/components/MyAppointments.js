@@ -7,10 +7,10 @@ const MyAppointments = ({patient}) => {
 
 
   return (
-    <div>
+    <div style={{backgroundColor : "lightblue" }}>
       <h1>My Appointments</h1>
-      <button onClick={() => navigate('/patient_homepage')}>Back to Home</button>
-      <table className="table">
+      <button className="btn ms-4 mt-2 btn-primary" onClick={() => navigate('/patient_homepage')}>Back to Home</button>
+      <table className="table ">
         <thead>
           <tr>
             <th scope="col">Hospital</th>
