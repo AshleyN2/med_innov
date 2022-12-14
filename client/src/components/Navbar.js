@@ -5,7 +5,7 @@ import '../css/Navbar.css'
 const Navbar = ({ user, setUser }) =>{
   const navigate = useNavigate()
 return (
-    <nav className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-secondary">
+    <nav className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-light">
         <div className="container">
         <a className="navbar-brand" href="#">
             <img className="logo" src="https://images.unsplash.com/photo-1612490566683-0b3ceabea435?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" width="30" height="24" />
@@ -28,23 +28,16 @@ return (
                 <a href="#home" className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <button className="btn btn-outline-light ms-2"
-              onClick={ () => {navigate('/clinicalservices')}}> Clinical Services</button>
+              <a href="#clinicalservices" className="nav-link"> Clinical Services </a>
             </li>
             <li className="nav-item">
-              <a href="/aboutus" className="btn btn-outline-light ms-3">
-                About Us
-              </a>
+              <a href="#aboutus" className="nav-link"> About Us </a>
             </li>
             <li className="nav-item">
-              <a href="/board" className="btn btn-outline-light ms-3">
-                Management Board
-              </a>
+              <a href="#board" className="nav-link"> Management Board </a>
             </li>
             <li className="nav-item">
-              <a  href="/contact" className="btn btn-outline-light ms-3">
-                Contact Us
-              </a>
+              <a  href="#contact" className="nav-link"> Contact Us </a>
             </li>
           </ul>
         </div>

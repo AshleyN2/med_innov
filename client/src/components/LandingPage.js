@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../css/LandingPage.css'
 
-
 function LandingPage() {
   const navigate = useNavigate()
 return (
@@ -35,7 +34,7 @@ return (
     <section id="clinicalservices">
       <div className="container ">
         <div className="row  ">
-          <div className="col-md-8 mx-auto text-center ">
+          <div className="col-md-8 mx-auto text-center" id="clinicalservices">
             <h6 className="text-primary ">CLINICAL SERVICES</h6>
             <h1>Our Services</h1>
             <p>
@@ -141,12 +140,11 @@ return (
     {/*SERVICES ENDS HERE*/}  
 
 {/*ABOUT US*/}
-<section className="row w-100 py-0 bg-light" id="aboutus">
-    <div className="col-lg-6 col-img" />
-    <div className="col-lg-6 py-5 ">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-10 offset-md-1">
+<section className="row w-100 py-0 bg-light" >
+   
+      <div className="container" id="aboutus">
+        <div className="row" >
+          <div className="col-md-10 offset-md-1" >
             <h6 className="text-primary">
               Want excellent healthcare services?
             </h6>
@@ -194,7 +192,7 @@ return (
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Labore suscipit blanditiis.
                 </p>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -204,8 +202,8 @@ return (
   {/*ABOUT US ENDS HERE*/}
 
    {/*MANAGEMENT BOARD*/}
-   <section id="board">
-    <div className="container">
+   <section >
+    <div className="container" id="board">
       <div className="row-mb-5">
         <div className="col-md-8 mx-auto text-center">
           <h6 className="text-primary">Management Board</h6>
@@ -223,49 +221,49 @@ return (
       <div className="row text-center g-4">
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="1board.png" alt="" />
+            <img src="images/1board.png" alt="" />
             <h5 className="mb-0 ">Wambui Njeri</h5>
             <h6>Chairperson</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="2board.png" alt="" />
+            <img src="images/2board.png"  alt="" />
             <h5 className="mb-0 ">Obi Rhamaphosa</h5>
             <h6>Vice Chairperson</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="6board.png" alt="" />
+            <img src="images/6board.png"  alt="" />
             <h5 className="mb-0 ">Anne Joubert</h5>
             <h6>Board Member</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="4board.png" alt="" />
+            <img src="images/4board.png" alt="" />
             <h5 className="mb-0 ">Tesfaye Habimana</h5>
             <h6>Board Member</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="5board.png" alt="" />
+            <img src="images/5board.png"  alt="" />
             <h5 className="mb-0 ">John Stone</h5>
             <h6>Board Member</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="3board.png" alt="" />
+            <img src="images/3board.png"  alt="" />
             <h5 className="mb-0 ">Kody Dikeledi</h5>
             <h6>Board Member</h6>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
           <div className="board-member card-effect">
-            <img src="7board.png" alt="" />
+            <img src="images/7board.png"  alt="" />
             <h5 className="mb-0 ">Isaac Sachs</h5>
             <h6>Board Member</h6>
           </div>
@@ -274,7 +272,7 @@ return (
           {" "}
           {/*On larger devices it'll cover 4 column spaces & on smaller 6 col. spaces*/}
           <div className="board-member card-effect">
-            <img src="8board.png" alt="" />
+            <img src="images/8board.png"  alt="" />
             <h5>Sonmi Wannity</h5>
             <h6>Board Member</h6>
           </div>
@@ -285,10 +283,10 @@ return (
   {/*MANAGEMENT BOARD ENDS HERE*/}
 
    {/*CONTACT US*/}
-   <section id="contact">
+   <section >
     <div className="container">
       <div className="row mb-5">
-        <div className="col-md-8 mx-auto text-center">
+        <div className="col-md-8 mx-auto text-center" id="contact">
           <h6 className="text-primary">Contact Us</h6>
           <h1>Get In Touch</h1>
         </div>
@@ -332,6 +330,7 @@ return (
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-4">
+          <h2 className="logo_rep_bottom logo_rep_bottom ">Med-Innov8.</h2>
             <img className="logo" src="2logo.png" alt="" />
           </div>
           <div className="col-md-2">

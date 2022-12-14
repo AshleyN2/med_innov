@@ -91,7 +91,7 @@ section {
 }
 
 .col-img {
-  /*background-image: url(2cover.jpg);*/
+  /*background-image: url('/client/public/images/2board.png');*/
   background-position: center;
   background-size: cover;
   min-height: 700px;
@@ -127,4 +127,12 @@ form .form-control {
 
 .footer-top a:hover {
   color: white;
+}
+
+.f-control {
+  height:56px;
+  width: 256px;
+  border:#21252f;
+ 
+  background-color: rgba(239, 241, 104, 0.486);
 }
