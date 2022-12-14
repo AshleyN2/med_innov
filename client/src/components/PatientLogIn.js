@@ -57,7 +57,7 @@ const PatientLogIn = ({setPatient}) => {
           }
           )
         }
-        <button className="btn ms-3 btn-primary" type='submit'>LogIn</button>
+        <button className="btn ms-3 btn-primary" type='submit'>Login</button>
         <p className="text-black ms-5">
           Don't have an account? <button className="btn ms-3 btn-primary"  onClick={() => navigate('/patient_signup')}>Sign Up</button>
         </p>

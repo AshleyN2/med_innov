@@ -49,32 +49,33 @@ const HospitalSignUp = ({setHospital}) => {
 
 
   return (
-    <div className='container'>
+    <div style={{backgroundColor : "lightblue" }}
+    className='container'>
       <div className="row">
-        <div className="col-md-6 offset-md-3">
+        <div className="col-md-6 mt-3 offset-md-3">
           <h1>Hospital SignUp</h1>
         </div>
         </div>
         <div className="row">
         <div className="col-md-6 offset-md-3">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input type='text' placeholder='name' value={name} onChange={(e) => setName(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='text' placeholder='Hospital Name' value={name} onChange={(e) => setName(e.target.value)} />
             </div>
-            <div className="form-group">
-              <input type='email' placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='email' placeholder='Hospital Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div className="form-group">
-              <input type='text' placeholder='location' value={location} onChange={(e) => setLocation(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='text' placeholder='Location' value={location} onChange={(e) => setLocation(e.target.value)} />
             </div>
-            <div className="form-group">
-              <input type='password' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='password' placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
-            <div className="form-group">
-              <input type='password' placeholder='password_confirmation' value={password_confirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='password' placeholder='Password Confirmation' value={password_confirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
             </div>
-            <div className="form-group">
-              <input type='text' placeholder='image_url' value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
+            <div className="mt-3 col-md-7">
+              <input className="form-control" type='text' placeholder='image_url' value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
             </div>
             {
               errors.map((error) => {
@@ -82,8 +83,8 @@ const HospitalSignUp = ({setHospital}) => {
               }
               )
             }
-            <div className="form-group">
-            <button type="submit" className="btn btn-primary">Submit</button> 
+            <div className="">
+            <button type="submit" className="btn ms-2 mt-3 btn-primary ">Submit</button> 
             </div>
           </form>
           <p>

@@ -62,26 +62,26 @@ const PatientSignUp = ({setPatient}) => {
 
   return (
     <div style={{backgroundColor : "lightblue" }}
-    className='container'>
+    className='container col-md-6 offset-md-3 '>
       {/* Bootstrap */}
-      <div className="row">
-        <div className="col-12">
+      <div className="row ">
+        <div className="col-md-6 mt-3 offset-md-3">
           <h1>Patient SignUp</h1>
         </div>
       </div>
       <div className="row ">
         <div className="col-12">
           <form onSubmit={handleSubmit}>
-            <div className="form-group mb-1 col-md-5">
+            <div className="form-group mb-1 col-md-7">
               <input type="text" className="form-control" id="name" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
             </div>
-            <div className="form-group mt-3 col-md-5">
+            <div className="form-group mt-3 col-md-7">
               <input type="email" className="form-control" id="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div className="form-group mt-3 col-md-5">
+            <div className="form-group mt-3 col-md-7">
               <input type="text" className="form-control" id="location" placeholder="Enter location" value={location} onChange={(e) => setLocation(e.target.value)} />
             </div>
-            <div className="form-group ms-2 col-md-5 mb-3 ">
+            <div className="form-group ms-2 col-md-5 mb-4 ">
               <label htmlFor="gender">Gender</label>
               <select className="option ms-3 mt-3" name="gender" id="gender"
               onChange={handleGenderChange}
@@ -90,13 +90,13 @@ const PatientSignUp = ({setPatient}) => {
                 <option value="male">Male</option>
               </select>
             </div>
-            <div className="form-group mt-3 col-md-2">
+            <div className="form-group mt-3 col-md-4">
               <input type="number" className="form-control" id="age" placeholder="Enter age" value={age} onChange={(e) => setAge(e.target.value)} />
             </div>
-            <div className="form-group mt-3 col-md-5">
+            <div className="form-group mt-3 col-md-7">
               <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
-            <div className="form-group mt-3 col-md-5">
+            <div className="form-group mt-3 col-md-7">
               <input type="password" className="form-control" id="password_confirmation" placeholder="Enter Password Confirmation" value={password_confirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} />
             </div>
             {

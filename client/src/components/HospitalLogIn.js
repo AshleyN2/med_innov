@@ -39,20 +39,23 @@ const HospitalLogIn = ({setHospital}) => {
 
 
   return (
-    <div className='container'>
+    <div style={{
+      backgroundImage: `url("https://images.unsplash.com/photo-1628348070889-cb656235b4eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")`,
+    }}
+    className='container'>
       <div className="row">
-        <div className="col-md-6 offset-md-3">
-          <h1>Hospital LogIn</h1>
+        <div className="col-md-6 offset-md-3 mt-2 mb-3 ">
+          <h1>Hospital Login</h1>
         </div>
       </div>
       <div className="row">
         <div className="col-md-6 offset-md-3 ">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input type='email' placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <div className="form-group ">
+              <input className='ms-3 mb-3' type='email' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="form-group">
-              <input type='password' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+              <input className='ms-3 mb-3' type='password' placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
             {
               errors.map((error) => {
@@ -61,11 +64,11 @@ const HospitalLogIn = ({setHospital}) => {
               )
             }
             <div className="form-group">
-              <button type='submit' className="btn btn-primary">LogIn</button>
+              <button type='submit' className="btn ms-3  btn-primary">Login</button>
             </div>
             <div className="form-group">
               <p>
-                Don't have an account? <button onClick={() => navigate('/hospital_signup')}>Sign Up</button>
+                Don't have an account? <button className="btn ms-3 btn-primary"  onClick={() => navigate('/hospital_signup')}>Sign Up</button>
               </p>
               </div>
           </form>
