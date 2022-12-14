@@ -1,7 +1,30 @@
+# Med-Innov8 
+
+Med-Innov8 is a hospital management system.
+Its primary users are patients and hospital management.
+The users can create new accounts & login.
+Prospectively, 
+* Patients should be able to view and book their appointments after logging in.
+* Hospital managements should be able to add doctors and delete patients records too.
+
 ## Live link
+
 https://med-innov8.onrender.com/
 
-# Project Template: React/Rails API
+### Logging In
+
+### Patient Sample User Account
+
+`email: john@gmail.com`
+
+`password: 123`
+
+### Hospital Sample User Account
+ `email: karenhospital@gmail.com`
+ 
+ `password: karen123`
+
+## Project Template Used: React/Rails API
 
 ## Description
 
