@@ -1,3 +1,6 @@
+## Live link
+https://med-innov8.onrender.com/
+
 # Project Template: React/Rails API
 
 ## Description
@@ -15,7 +18,7 @@ SQLite, you will need to make the following changes in the project files:
 
 ## Requirements
 
-- Ruby 2.7.4
+- Ruby 3.0.2
 - NodeJS (v16), and npm
 - Render account
 - Postgresql
@@ -24,6 +27,24 @@ See Environment Setup below for instructions on installing these tools if you
 don't already have them.
 
 ## Setup
+    Ruby version 3.0.2
+
+    Bundler version 2.3.26
+
+    Clone the repository
+
+    Run bundle install
+
+    Run rails db:create
+
+    Run rails db:migrate
+
+    Run rails db:seed
+
+    Run npm install --prefix client
+
+    Run foreman start -f Procfile
+
 
 Start by **cloning** (not forking) the project template repository and removing
 the remote:
