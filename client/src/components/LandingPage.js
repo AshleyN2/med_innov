@@ -19,7 +19,7 @@ return (
               Medical services &amp; expertise have never been this efficient!
               Providing world class healthcare with transparency. Be healthy, be
               happy.{" "}
-              </p>
+              </p >
             <button  className="btn me-3 btn-primary" onClick={ () => {navigate('/patient_login')}}>Patient Login</button>
             <button  className="btn btn-outline-light" onClick={ () => {navigate('/hospital_login')}}>Hospital Login</button>
             </div>
