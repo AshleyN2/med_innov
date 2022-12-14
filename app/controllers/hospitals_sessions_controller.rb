@@ -12,8 +12,6 @@ class HospitalsSessionsController < ApplicationController
         end
     end
 
-    
-
     def destroy
         session.delete :hospital_id
         render json: {}, status: :no_content

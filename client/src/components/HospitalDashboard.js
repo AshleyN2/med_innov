@@ -30,7 +30,7 @@ const HospitalDashboard = ({setHospital,hospital}) => {
         <p className='text-center'>You can also view your appointments and edit them.</p>
         
         <span>
-            <button className="btn  ms-4 btn-primary" onClick={handleLogout}>LogOut</button>
+            <button className="btn  ms-4 btn-primary" onClick={ () => {navigate('/hospital_login')}}>LogOut</button>
         </span>
     </div>
   )

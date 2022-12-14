@@ -62,7 +62,7 @@ const PatientSignUp = ({setPatient}) => {
 
   return (
     <div style={{backgroundColor : "lightblue" }}
-    className='container col-md-6 offset-md-3 '>
+    className='container '>
       {/* Bootstrap */}
       <div className="row ">
         <div className="col-md-6 mt-3 offset-md-3">
@@ -70,7 +70,7 @@ const PatientSignUp = ({setPatient}) => {
         </div>
       </div>
       <div className="row ">
-        <div className="col-12">
+        <div className="col-md-6 mt-3 offset-md-3">
           <form onSubmit={handleSubmit}>
             <div className="form-group mb-1 col-md-7">
               <input type="text" className="form-control" id="name" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
