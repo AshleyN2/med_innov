@@ -1,0 +1,20 @@
+.navbar {
+    box-shadow: var(--box-shadow);
+  }
+  
+  .navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .btn {
+    padding: 7px 7px;
+    border-width: 2px;
+    border-radius: 2;
+  }
+
+
+.logo {
+    width: 2px;
+    height: 7px;
+}
