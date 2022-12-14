@@ -1,6 +1,11 @@
 class HospitalsController < ApplicationController
 
-    skip_before_action :authorize, only: :create
+    skip_before_action :authorize , only: [:create, :index]
+
+    def index 
+        hospitals = Hospital.all
+        render json: hospitals, status: :ok
+    end
 
     def create
         @hospital = Hospital.create!(hospital_params)
@@ -9,8 +14,7 @@ class HospitalsController < ApplicationController
     end
 
     def show
-        render json: @current_hospital
-        
+        render json: @current_hospital   
     end
 
     def update
@@ -21,6 +25,6 @@ class HospitalsController < ApplicationController
     private
 
     def hospital_params
-        params.permit( :email, :name, :location, :password, :password_confirmation)
+        params.permit( :email, :name, :location, :password, :password_confirmation, :image_url)
     end
 end

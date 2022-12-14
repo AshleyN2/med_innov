@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 
-const HospitalLogin = ({setHospital}) => {
+const HospitalLogIn = ({setHospital}) => {
 
   const navigate = useNavigate()
 
@@ -77,4 +77,4 @@ const HospitalLogin = ({setHospital}) => {
   )
 }
 
-export default HospitalLogin
+export default HospitalLogIn

@@ -2,6 +2,7 @@ import './App.css';
 import React,{useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom'
 import LandingPage from './components/LandingPage';
+import Navbar from './components/Navbar';
 import PatientLogIn from './components/PatientLogIn';
 import PatientSignUp from './components/PatientSignUp';
 import HospitalLogIn from './components/HospitalLogIn';
@@ -58,6 +59,7 @@ function App() {
     <div className="App">
       <Routes>
         < Route path='/' element={<LandingPage/>} />
+        < Route path='/navbar' element={<Navbar/>} />
         < Route path='/patient_login' element={<PatientLogIn setPatient={setPatient} />} />
         < Route path='/patient_signup' element={<PatientSignUp  setPatient={setPatient} />} />
         < Route path='/hospital_login' element={<HospitalLogIn setHospital={setHospital}  />} />

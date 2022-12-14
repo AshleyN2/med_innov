@@ -5,9 +5,6 @@ Rails.application.routes.draw do
   resources :doctors
   resources :hospitals
 
-  # Routing logic: fallback requests for React Router.
-  # Leave this here to help deploy your app later!
-
   # Hospital Auth
   post '/hospitallogin', to: 'hospitals_sessions#create'
   delete '/hospitallogout', to: 'hospitals_sessions#destroy'
@@ -20,5 +17,7 @@ Rails.application.routes.draw do
   post '/patientsignup', to: 'patients#create'
   get '/patient', to: 'patients#show'
 
+  # Routing logic: fallback requests for React Router.
+  # Leave this here to help deploy your app later!
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end
