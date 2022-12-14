@@ -57,9 +57,10 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         < Route path='/' element={<LandingPage/>} />
-        < Route path='/navbar' element={<Navbar/>} />
+       
         < Route path='/patient_login' element={<PatientLogIn setPatient={setPatient} />} />
         < Route path='/patient_signup' element={<PatientSignUp  setPatient={setPatient} />} />
         < Route path='/hospital_login' element={<HospitalLogIn setHospital={setHospital}  />} />

@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import '../css/PatientLogin.css'
 
 const PatientLogIn = ({setPatient}) => {
   const navigate = useNavigate()
@@ -39,22 +40,29 @@ const PatientLogIn = ({setPatient}) => {
 
 
   return (
-    <div>
-      <h1>Patient LogIn</h1>
+    <div style={{
+      backgroundImage: `url("https://images.unsplash.com/photo-1628348070889-cb656235b4eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")`,
+    }}
+    className="hero vh-100 d-flex align-items-center">
+    <div style={{backgroundColor : ''}} 
+    className="container mb-5 ">
+      <h1 className='mt-1 mb-3' >Patient Login</h1>
+      <h6>Enter your patient details below</h6>
       <form onSubmit={handleSubmit}>
-        <input type='email' placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type='password' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input  className='ms-3'type='email' placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input className='m-3'type='password' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} />
         {
           errors.map((error) => {
             return <p>{error}</p>
           }
           )
         }
-        <button type='submit'>LogIn</button>
+        <button className="btn ms-3 btn-primary" type='submit'>LogIn</button>
         <p>
-          Don't have an account? <button onClick={() => navigate('/patient_signup')}>Sign Up</button>
+          Don't have an account? <button className="btn ms-3 btn-primary"  onClick={() => navigate('/patient_signup')}>Sign Up</button>
         </p>
       </form>
+    </div>
     </div>
   )
 }

@@ -46,7 +46,7 @@ const HospitalLogIn = ({setHospital}) => {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6 offset-md-3">
+        <div className="col-md-6 offset-md-3 ">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input type='email' placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
