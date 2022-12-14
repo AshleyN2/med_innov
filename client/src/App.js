@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom'
 import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
+import Services from './components/Services';
 import PatientLogIn from './components/PatientLogIn';
 import PatientSignUp from './components/PatientSignUp';
 import HospitalLogIn from './components/HospitalLogIn';

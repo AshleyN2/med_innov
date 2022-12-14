@@ -5,7 +5,7 @@ import '../css/Navbar.css'
 const Navbar = ({ user, setUser }) =>{
   const navigate = useNavigate()
 return (
-    <nav className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-black">
+    <nav className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-secondary">
         <div className="container">
         <a className="navbar-brand" href="#">
             <img className="logo" src="https://images.unsplash.com/photo-1612490566683-0b3ceabea435?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" width="30" height="24" />
@@ -22,39 +22,31 @@ return (
             <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
+            <h2 className="logo_rep logo_rep ">Med-Innov8.</h2>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">
-                Home
-              </a>
+                <a href="#home" className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#clinicalservices">
-                Clinical Services
-              </a>
+              <button className="btn btn-outline-light ms-2"
+              onClick={ () => {navigate('/clinicalservices')}}> Clinical Services</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#aboutus">
+              <a href="/aboutus" className="btn btn-outline-light ms-3">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#board">
+              <a href="/board" className="btn btn-outline-light ms-3">
                 Management Board
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Login
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a  href="/contact" className="btn btn-outline-light ms-3">
                 Contact Us
               </a>
             </li>
           </ul>
-          <button className="btn btn-primary ms-lg-3">Book Appointment</button>
         </div>
         </div>
     </nav>
